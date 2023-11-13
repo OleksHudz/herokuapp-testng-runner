@@ -24,7 +24,7 @@ pipeline {
         always {
             sh "docker-compose -f grid.yaml down"
             sh "docker-compose -f test-suites.yaml down"
-            archiveArtifacts artifacts: 'output/herokuapp/emailable-report.html', followSymlinks: false
+            archiveArtifacts artifacts: 'output/herokuapp-testng/emailable-report.html', followSymlinks: false
         }
     }
 }
