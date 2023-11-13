@@ -1,0 +1,11 @@
+version: "3"
+services:
+  herokuapp-testng:
+    image: olekshuds/selenium
+    environment:
+    - BROWSER
+    - HUB_HOST=hub
+    - THREAD_COUNT=4
+    - TEST_SUITE=regression-suite.xml
+    volumes:
+    - ./output/herokuapp-testng:/home/selenium-docker/test-output
