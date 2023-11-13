@@ -5,7 +5,7 @@ services:
     environment:
     - BROWSER
     - HUB_HOST=hub
-    - THREAD_COUNT=1
+    - THREAD_COUNT=4
     - TEST_SUITE=regression-suite.xml
     volumes:
     - ./output/herokuapp-testng:/home/selenium-docker/test-output
